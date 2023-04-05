@@ -49,3 +49,17 @@
     display: none !important;
   }
 }
+
+.inner {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+
+  @media screen and (min-width: $md-breakpoint) {
+    padding: 0 1.5rem;
+  }
+
+  @media screen and (min-width: $lg-breakpoint) {
+    max-width: $lg-breakpoint;
+  }
+}
