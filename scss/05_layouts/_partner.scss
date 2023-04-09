@@ -1,0 +1,96 @@
+.partner {
+  padding: 2rem 0;
+  border-bottom: 0.1rem solid #ddd;
+
+  &__carousel {
+    position: relative;
+    padding: 0 1.5rem;
+
+    .btn-control {
+      @include pos-center-y;
+      @include flexbox;
+      width: 2rem;
+      height: 2rem;
+      font-size: 1.8rem;
+    }
+
+    .btn-prev {
+      left: 1.5rem;
+    }
+
+    .btn-next {
+      right: 1.5rem;
+    }
+  }
+
+  &__carousel-box {
+    width: 24rem;
+    margin: 0 auto;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__list {
+    @include inline-flexbox(start);
+
+    li {
+      @include flexbox;
+      flex-grow: 1;
+      min-width: 8rem;
+      height: 5.5rem;
+      padding: 2rem 0.4rem;
+    }
+
+    img {
+      display: inline-block;
+      max-width: 100%;
+      vertical-align: middle;
+    }
+  }
+}
+
+.partner {
+  @media screen and (min-width: $md-breakpoint) {
+    &__carousel-box {
+      width: 65.8rem;
+    }
+
+    &__list {
+      li {
+        min-width: 16.5rem;
+      }
+    }
+  }
+}
+
+.partner {
+  @media screen and (min-width: $lg-breakpoint) {
+    &__carousel-box {
+      width: 83.4rem;
+    }
+
+    &__list {
+      li {
+        width: 20.9rem;
+      }
+    }
+  }
+}
+
+.partner {
+  $xl-breakpoint: calc(76.25rem + 1px);
+  @media screen and (min-width: $xl-breakpoint) {
+    &__carousel-box {
+      width: 100.1rem;
+    }
+
+    &__list {
+      li {
+        width: 16.7rem;
+      }
+    }
+  }
+}
