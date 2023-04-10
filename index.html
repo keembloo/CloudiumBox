@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="Title" content="cloudiumbox" />
+    <meta name="Subject" content="cloudiumbox" />
+    <title>cloudiumbox</title>
+
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,12 +15,263 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/5935adf876.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
-  <body>
-    <div class="box1 sm-only">sdgsdg</div>
-    <div class="box2 md-only">헌굴라ㅏ헌</div>
-    <div class="box3 lg-only"></div>
 
-    <h1>안녕하세영</h1>
+  <body>
+    <div class="inner">
+      <header class="header">
+        <div class="header__container">
+          <h1 class="header__logo">
+            <a href="https://www.cloudiumbox.com/kr/" target="_blank">
+              <img src="./images/logo.svg" alt="로고이미지" />
+            </a>
+          </h1>
+          <div class="header__untill">
+            <a href="#" class="untill__login" role="button">
+              <div class="untill__login__text">로그인</div>
+            </a>
+            <a href="#" class="untill__free" role="button">
+              <div class="untill__free__text">무료로 시작하기</div>
+            </a>
+          </div>
+
+          <!-- 네비게이션 pc메뉴 -->
+          <nav class="header__pcnav lgst-only">
+            <div class="header__pcnav__container">
+              <ul class="pcnav__list">
+                <!-- pc 1번메뉴 -->
+                <li class="pcnav__list__1depth">
+                  <a href="#" class="pc__1depth__menu">
+                    서비스소개
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+                  <ul class="pcnav__list__2depth depth2-box1">
+                    <li class="pc__2depth__menu">
+                      <a href="#">
+                        <i class="fa-regular fa-folder-open"></i>
+                        Why cloudiumbox
+                      </a>
+                    </li>
+                    <li class="pc__2depth__menu">
+                      <a href="#">
+                        <i class="fa-regular fa-file-lines"></i>
+                        고객사례
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- 2번메뉴 -->
+                <li class="pcnav__list__1depth">
+                  <a href="#" class="pc__1depth__menu">
+                    주요기능
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+
+                  <div class="pcnav__list__2depth depth2-box2">
+                    <ul class="depth2-box2__container">
+                      <!-- 왼쪽 메뉴 -->
+                      <li class="menu__wrap--left">
+                        <div class="menu__sec__title">문서보안</div>
+                        <ul>
+                          <li class="menu__sec__list">
+                            <a href="#">
+                              <i class="fa-solid fa-shield-halved"></i>
+                              문서 유출 차단
+                            </a>
+                          </li>
+                          <li class="menu__sec__list">
+                            <a href="#">
+                              <i class="fa-solid fa-lock"></i>
+                              문서 유실 방지
+                            </a>
+                          </li>
+                          <li class="menu__sec__list">
+                            <a href="#">
+                              <i class="fa-solid fa-arrows-to-circle"></i>
+                              랜섬웨어 대응
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <!-- 오른쪽 메뉴 -->
+                      <li class="menu__wrap--right">
+                        <div class="menu__sec__title">문서 관리와 활용</div>
+                        <ul>
+                          <li class="menu__sec__list">
+                            <a href="#">
+                              <i class="fa-solid fa-cloud-arrow-up"></i>
+                              문서 통합 관리리
+                            </a>
+                          </li>
+                          <li class="menu__sec__list">
+                            <a href="#">
+                              <i class="fa-solid fa-comments"></i>
+                              공유와 협업
+                            </a>
+                          </li>
+                          <li class="menu__sec__list">
+                            <a href="#">
+                              <i class="fa-solid fa-house-chimney"></i>
+                              재택 근무 활용
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <!-- 하단 메뉴 -->
+                      <li class="menu__wrap--bottom">
+                        <ul class="wrap--bottom__box">
+                          <li class="menu__sec__list sec__list__bottom">
+                            <a href="#">
+                              <i class="fa-solid fa-cloud-arrow-up"></i>
+                              문서 통합 관리
+                            </a>
+                          </li>
+                          <li class="menu__sec__list sec__list__bottom">
+                            <a href="#">
+                              <i class="fa-regular fa-calendar"></i>
+                              편리한 관리
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="pcnav__list__1depth">
+                  <a href="#" class="pc__1depth__menu">요금</a>
+                </li>
+                <li class="pcnav__list__1depth">
+                  <a href="#" class="pc__1depth__menu">비교</a>
+                </li>
+                <li class="pcnav__list__1depth">
+                  <a href="#" class="pc__1depth__menu">
+                    지원
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+
+                  <ul class="pcnav__list__2depth depth2-box3">
+                    <li class="pc__2depth__menu">
+                      <a href="#">
+                        <i class="fa-solid fa-file-lines"></i>
+                        공지사항
+                      </a>
+                    </li>
+                    <li class="pc__2depth__menu">
+                      <a href="#">
+                        <i class="fa-solid fa-headset"></i>
+                        기술지원
+                      </a>
+                    </li>
+                    <li class="pc__2depth__menu">
+                      <a href="#">
+                        <i class="fa-solid fa-circle-question"></i>
+                        자주묻는질문
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <!-- 네비게이션 버튼 -->
+        <button
+          type="button"
+          class="header__btn lgst-hidden"
+          title="네비게이션 열기"
+        >
+          <span class="header__btn__line"></span>
+          <span class="header__btn__line"></span>
+          <span class="header__btn__line"></span>
+        </button>
+
+        <!-- 네비게이션 메뉴 -->
+        <nav class="header__nav lgst-hidden">
+          <div class="header__nav__inner">
+            <ul class="nav__list">
+              <!-- 1번메뉴 -->
+              <li class="item__1depth">
+                <div class="item__1depth__menu">서비스소개</div>
+                <ul class="item__2depth">
+                  <li>
+                    <a href="#" class="item__2depth__menu">Why cloudiumbox</a>
+                  </li>
+                  <li>
+                    <a href="#" class="item__2depth__menu">고객사례</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- 2번메뉴 -->
+              <li class="item__1depth">
+                <div class="item__1depth__menu">주요기능</div>
+                <ul class="item__2depth">
+                  <li>
+                    <a href="#" class="item__2depth__menu">문서 유출 차단</a>
+                  </li>
+                  <li>
+                    <a href="#" class="item__2depth__menu">문서 유실 방지</a>
+                  </li>
+                  <li>
+                    <a href="#" class="item__2depth__menu">랜섬웨어 대응</a>
+                  </li>
+                  <li>
+                    <a href="#" class="item__2depth__menu">문서 통합 관리</a>
+                  </li>
+                  <li>
+                    <a href="#" class="item__2depth__menu">공유와 협업</a>
+                  </li>
+                  <li>
+                    <a href="#" class="item__2depth__menu">재택 근무 활용</a>
+                  </li>
+                  <li>
+                    <a href="#" class="item__2depth__menu">클라우드 보안</a>
+                  </li>
+                  <li>
+                    <a href="#" class="item__2depth__menu">편리한 관리</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- 3번메뉴 -->
+              <li class="item__1depth">
+                <a href="#" class="item__1depth__menu">요금</a>
+              </li>
+
+              <!-- 4번메뉴 -->
+              <li class="item__1depth">
+                <a href="#" class="item__1depth__menu">비교</a>
+              </li>
+
+              <!-- 5번메뉴 -->
+              <li class="item__1depth">
+                <div class="item__1depth__menu">지원</div>
+                <ul class="item__2depth">
+                  <li>
+                    <a href="#" class="item__2depth__menu">공지사항</a>
+                  </li>
+                  <li>
+                    <a href="#" class="item__2depth__menu">기술지원</a>
+                  </li>
+                  <li>
+                    <a href="#" class="item__2depth__menu">자주묻는질문</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+    <script src="./JS/header.js"></script>
   </body>
 </html>
