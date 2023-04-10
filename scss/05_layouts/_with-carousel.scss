@@ -70,6 +70,47 @@
     text-align: center;
   }
 }
+
+.banner-link {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+
+  & a {
+    width: 40.5%;
+    height: 4.5rem;
+
+    & span {
+      position: relative;
+      display: table;
+      width: 100%;
+      height: 100%;
+      text-align: left;
+      & em {
+        display: table-cell;
+        vertical-align: middle;
+        font-weight: 400;
+        font-size: 1.3rem;
+        letter-spacing: -0.5px;
+        padding-right: 3.2rem;
+        padding-left: 1.5rem;
+        line-height: 1.2;
+        font-style: inherit;
+      }
+      & i {
+        position: absolute;
+        right: 1.6rem;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  & a + a {
+    margin-left: 1rem;
+  }
+}
 .with__list {
   margin-top: 4rem;
   width: 100%;
@@ -191,6 +232,32 @@
   }
   .with-txt .with__list .with-wrap em {
     font-size: 2.9rem;
+  }
+  .banner-img {
+    position: absolute;
+    right: 7%;
+    bottom: 0;
+    text-align: right;
+    width: 35%;
+    transform: translateX(25px);
+    transition: all 1s 0.3s;
+
+    & img {
+      width: 100%;
+    }
+  }
+  .banner-link {
+    justify-content: flex-start;
+
+    & a {
+      width: 30.36%;
+      padding: 0 3rem;
+      height: 5.4rem;
+    }
+  }
+
+  .banner-link a span em {
+    font-size: 1.6rem;
   }
 
   .with-cloudium .with-wrap .up h3 {
