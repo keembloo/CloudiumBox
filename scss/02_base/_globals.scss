@@ -60,6 +60,12 @@
   }
 
   @media screen and (min-width: $lg-breakpoint) {
-    max-width: $lg-breakpoint;
+    max-width: 140rem;
+  }
+
+  // 추가
+  @media screen and (min-width: 87.5rem) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
