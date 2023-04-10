@@ -1,0 +1,149 @@
+.mainvisual {
+  position: relative;
+  &__video__container {
+    width: 100%;
+    position: absolute;
+    margin-top: 38.3rem;
+  }
+  &__video {
+    outline: none;
+    border: none;
+    video {
+      width: 100%;
+      // outline: none; 비디오 테두리 사라지게 하기 적용안됨 그래서 밑에방법으로 함
+      // border: none; 비디오 테두리 사라지게 하기 적용안됨 그래서 밑에방법으로 함
+      // -webkit-mask-image: -webkit-radial-gradient(white, black);
+      // -webkit-backface-visibility: hidden;
+      // -moz-backface-visibility: hidden;
+    }
+  }
+
+  &__text {
+    position: relative;
+    top: 11rem;
+    left: 0;
+    word-break: keep-all;
+    text-align: center;
+    padding: 0 1.5rem;
+
+    .text__main {
+      color: #2e79eb;
+      font-family: $font-title;
+      font-size: 4rem;
+      letter-spacing: -0.3rem;
+      line-height: 1.133;
+
+      span {
+        color: #111b35;
+        font-family: $font-title;
+      }
+    }
+    .text__sub {
+      color: #fff;
+      margin-top: 2.5rem;
+      font-size: 1.5rem;
+      color: #2d4381;
+      letter-spacing: -0.035rem;
+      line-height: 1.7;
+      word-break: keep-all;
+    }
+    .text__startfree {
+      position: relative;
+      width: 19rem;
+      height: 4.7rem;
+      margin: 2rem auto 0;
+      font-size: 1.4rem;
+      padding-left: 2rem;
+
+      display: flex;
+      align-items: center;
+      border-radius: 50px;
+      background-color: #0a54b8;
+      color: #fff;
+      box-shadow: $button-shadow;
+
+      &__arrow {
+        position: absolute;
+        display: inline-block;
+        background-image: url('../../images/wh_arrow.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 0.8rem;
+        height: 1.5rem;
+        right: 2rem;
+      }
+    }
+  }
+}
+
+// 태블릿 ----------------------- /
+@media screen and (min-width: $md-breakpoint) {
+  .mainvisual {
+    &__video__container {
+      margin-top: 37.5rem;
+    }
+
+    &__text {
+      top: 13rem;
+      .text__main {
+        font-size: 4.5rem;
+      }
+    }
+  }
+}
+
+// PC ----------------------- /
+
+@media screen and (min-width: $lg-breakpoint) {
+  .mainvisual {
+    height: 77rem;
+    overflow: hidden;
+    &__video__container {
+      width: 100%;
+      position: absolute;
+      margin-top: 20rem;
+    }
+    &__video {
+      width: 100%;
+      position: absolute;
+      right: -37.7rem;
+      top: -4.7rem;
+      video {
+        width: 72%;
+        // outline: none; 비디오 테두리 사라지게 하기 적용안됨 그래서 밑에방법으로 함
+        // border: none; 비디오 테두리 사라지게 하기 적용안됨 그래서 밑에방법으로 함
+        // -webkit-mask-image: -webkit-radial-gradient(white, black);
+        // -webkit-backface-visibility: hidden;
+        // -moz-backface-visibility: hidden;
+      }
+    }
+
+    &__text {
+      position: relative;
+      top: 21.5rem;
+      left: 0;
+      text-align: left;
+
+      .text__main {
+        font-size: 6.2rem;
+
+        span {
+          font-size: 6.2rem;
+        }
+      }
+      .text__sub {
+        margin-top: 5rem;
+        font-size: 1.8rem;
+      }
+
+      .text__startfree {
+        position: absolute;
+        width: 26rem;
+        height: 6.5rem;
+        font-size: 1.85rem;
+        padding: 0 2.7rem 0 4rem;
+        margin-top: 4.2rem;
+      }
+    }
+  }
+}
