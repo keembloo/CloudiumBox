@@ -1,13 +1,13 @@
 .btn-b {
   @include flexbox;
   border-radius: 50px;
-  background-color: #2e79eb;
-  color: #fff;
+  background-color: $primaryBlue1;
+  color: $white;
 }
 .btn-w {
   @include flexbox;
-  border: 2px solid #0079ff;
+  border: 2px solid $primaryBlue8;
   box-sizing: border-box;
   border-radius: 50px;
-  color: #0079ff;
+  color: $primaryBlue8;
 }

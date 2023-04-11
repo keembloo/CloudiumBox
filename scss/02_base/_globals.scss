@@ -72,6 +72,12 @@
   }
 
   @media screen and (min-width: $lg-breakpoint) {
-    max-width: 140rem; //1400px로 맞추려고 했던것 10px기준임
+    max-width: 140rem;
+  }
+
+  // 추가
+  @media screen and (min-width: 87.5rem) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
