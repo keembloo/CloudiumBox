@@ -3,13 +3,20 @@
 @import './01_constants/colors';
 @import './01_constants/z-indexes';
 
+@import './02_base/font';
 @import './02_base/globals';
 @import './02_base/normalize';
 @import './02_base/reset';
-@import './02_base/font';
 
 @import './03_mixins/flexbox';
 @import './03_mixins/line-clamp';
 @import './03_mixins/positions';
+
+@import './04_modules/btns';
+@import './04_modules/section-common';
+@import './04_modules/card-slider';
+
+@import './05_layouts/about';
+@import './05_layouts/why';
 
 //내용을...작성...해주세요
