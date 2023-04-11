@@ -32,6 +32,12 @@
   }
 }
 
+.lgst-only {
+  @media screen and (max-width: calc($lgst-breakpoint - 1px)) {
+    display: none !important;
+  }
+}
+
 .sm-hidden {
   @media screen and (max-width: calc($md-breakpoint - 1px)) {
     display: none !important;
@@ -50,6 +56,12 @@
   }
 }
 
+.lgst-hidden {
+  @media screen and (min-width: $lgst-breakpoint) {
+    display: none !important;
+  }
+}
+
 .inner {
   width: 100%;
   padding: 0 1rem;
@@ -60,6 +72,6 @@
   }
 
   @media screen and (min-width: $lg-breakpoint) {
-    max-width: $lg-breakpoint;
+    max-width: 140rem; //1400px로 맞추려고 했던것 10px기준임
   }
 }
