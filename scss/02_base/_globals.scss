@@ -60,6 +60,10 @@
   }
 
   @media screen and (min-width: $lg-breakpoint) {
-    max-width: $lg-breakpoint;
+    max-width: 140rem;
+  }
+
+  @media screen and (min-width: $lg-breakpoint) {
+    max-width: 150rem;
   }
 }
