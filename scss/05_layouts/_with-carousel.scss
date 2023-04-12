@@ -87,6 +87,7 @@
   display: flex;
   justify-content: center;
   padding-top: 3rem;
+  min-width: 4.4rem;
 
   & a {
     width: 40.5%;
@@ -175,10 +176,13 @@
     & p.txt02 {
       font-size: 1.3rem;
       margin-top: 1.5rem;
-
       & a {
         opacity: 0.8;
         font-weight: 300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
       }
     }
   }
