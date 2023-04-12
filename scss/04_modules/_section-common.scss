@@ -73,14 +73,16 @@ body {
     }
    
     .btn-w {
+        @include flexbox (normal, center);
         position: relative;
         width: 20rem;
         height: 5rem;
         padding: 0 1.153em;
-        justify-content: normal;
         font-weight: 600;
         line-height: 1em;
         text-align: left;
+        border: 2px solid $primaryBlue8;
+        color: $primaryBlue8;
         transition:all 0.3s;
         &::after {
             content: "";
