@@ -17,7 +17,7 @@ body {
         
         }
     .sc-tit {
-        font-size: 3em;
+        font-size: 3rem;
         font-weight: 500;
         font-family: $font-title;
         line-height: 1.2em;
@@ -126,21 +126,13 @@ body {
     /* modules - section common */
     .section {
         .title-wr {
-            margin-bottom: 6rem;
+            margin-bottom: 4.5rem;
         }
         .sc-tit {
-            font-size: 6rem;
-        }
-        .sc-tit-sub {
-            margin-top: 1rem;
-            font-size: 2.3rem;
+            font-size: 4.5rem;
         }
         .ac-tit {
-            font-size: 3.3rem;
-        }
-        .ac-tit-sub {
-            margin-bottom: 2rem;
-            font-size: 2.3rem;
+            font-size: 2.8rem;
         }
         .contents {
             font-size: 1.6rem;
@@ -155,6 +147,27 @@ body {
             &:hover::after {
                 background-position-y: -1.4rem;
             }
+        }
+    }
+}
+
+/* PC */
+@media screen and (min-width: $lg-breakpoint) {
+    /* modules - section common */
+    .section {
+        padding: 10rem 0 12.2rem;
+        .title-wr {
+            margin-bottom: 6rem;
+        }
+        .sc-tit {
+            font-size: 6rem;
+        }
+        .sc-tit-sub {
+            margin-top: 1rem;
+            font-size: 2.3rem;
+        }
+        .ac-tit {
+            font-size: 3.3rem;
         }
     }
 }
