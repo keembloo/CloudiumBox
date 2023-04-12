@@ -571,7 +571,7 @@ body {
   top: 50%;
   right: 1.153em;
   transform: translateY(-50%);
-  background-image: url("../../images/icon_btn_arrows.png");
+  background-image: url("./images/icon_btn_arrows.png");
   background-size: cover;
   background-position: 0 0;
 }
@@ -1648,7 +1648,7 @@ body {
   width: 1.9rem;
   height: 1.3rem;
   transform: rotate(90deg);
-  background-image: url("../../images/wh_arrow_02.png");
+  background-image: url("./images/wh_arrow_02.png");
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 100%;
@@ -1685,40 +1685,40 @@ body {
   background-size: contain;
 }
 .section-why .contents .details__item--1-1::before {
-  background-image: url("../../images/main_sec03_icon01.png");
+  background-image: url("./images/main_sec03_icon01.png");
 }
 .section-why .contents .details__item--1-2::before {
-  background-image: url("../../images/main_sec03_icon02.png");
+  background-image: url("./images/main_sec03_icon02.png");
 }
 .section-why .contents .details__item--1-3::before {
-  background-image: url("../../images/main_sec03_icon03.png");
+  background-image: url("./images/main_sec03_icon03.png");
 }
 .section-why .contents .details__item--2-1::before {
-  background-image: url("../../images/main_sec03_icon04.png");
+  background-image: url("./images/main_sec03_icon04.png");
 }
 .section-why .contents .details__item--2-2::before {
-  background-image: url("../../images/main_sec03_icon05.png");
+  background-image: url("./images/main_sec03_icon05.png");
 }
 .section-why .contents .details__item--2-3::before {
-  background-image: url("../../images/main_sec03_icon06.png");
+  background-image: url("./images/main_sec03_icon06.png");
 }
 .section-why .contents .details__item--3-1::before {
-  background-image: url("../../images/main_sec03_icon07.png");
+  background-image: url("./images/main_sec03_icon07.png");
 }
 .section-why .contents .details__item--3-2::before {
-  background-image: url("../../images/main_sec03_icon08.png");
+  background-image: url("./images/main_sec03_icon08.png");
 }
 .section-why .contents .details__item--3-3::before {
-  background-image: url("../../images/main_sec03_icon09.png");
+  background-image: url("./images/main_sec03_icon09.png");
 }
 .section-why .contents .details__item--4-1::before {
-  background-image: url("../../images/main_sec03_icon10.png");
+  background-image: url("./images/main_sec03_icon10.png");
 }
 .section-why .contents .details__item--4-2::before {
-  background-image: url("../../images/main_sec03_icon11.png");
+  background-image: url("./images/main_sec03_icon11.png");
 }
 .section-why .contents .details__item--4-3::before {
-  background-image: url("../../images/main_sec03_icon12.png");
+  background-image: url("./images/main_sec03_icon12.png");
 }
 .section-why .contents .txt-box__tit {
   font-size: 2rem;

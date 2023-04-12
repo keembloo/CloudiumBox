@@ -46,7 +46,7 @@
           width: 1.9rem;
           height: 1.3rem;
           transform: rotate(90deg);
-          background-image: url('../../images/wh_arrow_02.png');
+          background-image: url('./images/wh_arrow_02.png');
           background-repeat: no-repeat;
           background-position: left top;
           background-size: 100%;
@@ -89,46 +89,46 @@
         }
         &--1 {
           &-1::before {
-            background-image: url('../../images/main_sec03_icon01.png');
+            background-image: url('./images/main_sec03_icon01.png');
           }
           &-2::before {
-            background-image: url('../../images/main_sec03_icon02.png');
+            background-image: url('./images/main_sec03_icon02.png');
           }
           &-3::before {
-            background-image: url('../../images/main_sec03_icon03.png');
+            background-image: url('./images/main_sec03_icon03.png');
           }
         }
         &--2 {
           &-1::before {
-            background-image: url('../../images/main_sec03_icon04.png');
+            background-image: url('./images/main_sec03_icon04.png');
           }
           &-2::before {
-            background-image: url('../../images/main_sec03_icon05.png');
+            background-image: url('./images/main_sec03_icon05.png');
           }
           &-3::before {
-            background-image: url('../../images/main_sec03_icon06.png');
+            background-image: url('./images/main_sec03_icon06.png');
           }
         }
         &--3 {
           &-1::before {
-            background-image: url('../../images/main_sec03_icon07.png');
+            background-image: url('./images/main_sec03_icon07.png');
           }
           &-2::before {
-            background-image: url('../../images/main_sec03_icon08.png');
+            background-image: url('./images/main_sec03_icon08.png');
           }
           &-3::before {
-            background-image: url('../../images/main_sec03_icon09.png');
+            background-image: url('./images/main_sec03_icon09.png');
           }
         }
         &--4 {
           &-1::before {
-            background-image: url('../../images/main_sec03_icon10.png');
+            background-image: url('./images/main_sec03_icon10.png');
           }
           &-2::before {
-            background-image: url('../../images/main_sec03_icon11.png');
+            background-image: url('./images/main_sec03_icon11.png');
           }
           &-3::before {
-            background-image: url('../../images/main_sec03_icon12.png');
+            background-image: url('./images/main_sec03_icon12.png');
           }
         }
       }
