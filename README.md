@@ -28,6 +28,7 @@ HTML/CSS를 활용한 팀 프로젝트
 
 <br>
 원본페이지의 접근성에는 이러한 오류들이 있었다.
+![image](https://user-images.githubusercontent.com/124680749/231431285-c6207561-2c84-426f-a583-51a312241886.png)
 <br>
 <br>
 <br>
@@ -45,6 +46,7 @@ HTML/CSS를 활용한 팀 프로젝트
 
 <br>
 원본페이지의 SEO에는 이러한 오류들이 있었다.
+![image (1)](https://user-images.githubusercontent.com/124680749/231431307-971c4299-a279-4005-8233-2629248cea81.png)
 <br>
 <br>
 <br>
@@ -65,16 +67,19 @@ HTML/CSS를 활용한 팀 프로젝트
 8. 배경색상이 존재하지 않아 색상의 대비율이 명확하지 않아 배경색상을 개선
 9. script에 defer 속성을 부여하여 웹페이지 로드 속도를 향상시키고 script 실행을 효율적으로 제어
 
-### 라이트 하우스 검사 결과 (점수만나오게)
+### 라이트 하우스 검사 결과
 
 원본페이지 모바일
+![main-sm](https://user-images.githubusercontent.com/124680749/231431340-8d19d85b-4a00-4556-93a1-0ff00c1266ff.png)
 
 클론페이지 모바일
+![my-sm](https://user-images.githubusercontent.com/124680749/231431351-8d36c491-f57a-41bc-b287-a5bd570702c0.png)
 
 원본페이지 데스크탑
+![main-lg](https://user-images.githubusercontent.com/124680749/231431373-6871e094-9395-4fdc-bf8a-b3fd3d455b68.png)
 
 클론페이지 데스크탑
-
+![my-lg](https://user-images.githubusercontent.com/124680749/231431382-46bf3efc-26a9-4907-8f63-968b2bdb260a.png)
 <br>
 <br>
 <br>
