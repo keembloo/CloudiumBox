@@ -82,6 +82,8 @@
 
 .charge {
   @media screen and (min-width: $lg-breakpoint) {
+    padding: 10rem 0 16.4rem;
+
     &__wrapper {
       max-width: 93.5rem;
       padding: 5.5rem 0 4.5rem;
