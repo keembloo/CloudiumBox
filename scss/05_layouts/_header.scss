@@ -3,6 +3,9 @@
 .header {
   width: 100%;
   height: auto;
+  .inner {
+    padding: 0;
+  }
 
   &__container {
     width: 100%;
@@ -11,7 +14,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #fff;
 
+    padding-left: 1.5rem;
     position: fixed;
     z-index: 99;
     top: 0;
@@ -329,7 +334,6 @@
     &__container {
       height: 10rem;
       padding: 0 1.5rem;
-      position: relative;
       max-width: 140rem;
     }
     &__logo {
