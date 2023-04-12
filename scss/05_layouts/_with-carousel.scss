@@ -45,7 +45,9 @@
     font-size: 1.3rem;
   }
 }
-
+.safe-article {
+  padding-bottom: 5rem;
+}
 .safe-wrap {
   padding: 40px 0;
   position: relative;
@@ -311,6 +313,7 @@
     width: 80%;
   }
 }
+
 @media screen and (min-width: $blg-breakpoint) {
   .bg {
     width: 100%;
@@ -326,5 +329,8 @@
   }
   .with__list .with-wrap strong {
     text-align: start;
+  }
+  .safe-article {
+    padding-bottom: 10rem;
   }
 }
