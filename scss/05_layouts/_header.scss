@@ -3,6 +3,10 @@
 .header {
   width: 100%;
   height: auto;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  background-color: #fff;
   .inner {
     padding: 0;
   }
@@ -14,12 +18,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
+    position: relative;
+
+    // background-color: #fff;
 
     padding-left: 1.5rem;
-    position: fixed;
-    z-index: 99;
-    top: 0;
+    // position: fixed;
+    // z-index: 99;
+    // top: 0;
   }
 
   &__logo {
@@ -35,8 +41,8 @@
 
   &__untill {
     display: flex;
-    position: absolute;
-    right: 5.2rem;
+
+    padding-right: 4.5rem;
 
     line-height: 1.15;
     font-size: 1.1rem;
@@ -78,7 +84,7 @@
     position: fixed;
     top: 1.9rem;
     right: 1.5rem;
-    z-index: 200;
+    z-index: 1000;
 
     &__line {
       width: 2rem;
@@ -113,8 +119,9 @@
     background-color: #fff;
     position: fixed;
     left: 0;
+    top: 0;
     transform: translateY(-100%);
-    z-index: 99;
+    z-index: 999;
     transition: 0.3s ease-in-out;
     // opacity: 0;
     // display: none;
@@ -206,7 +213,7 @@
     }
 
     &__untill {
-      right: 7.2rem;
+      padding-right: 6.5rem;
       font-size: 1.25rem;
 
       .untill__login {
@@ -274,7 +281,7 @@
     }
 
     &__untill {
-      right: 8rem;
+      padding-right: 7rem;
       font-size: 1.5rem;
 
       .untill__login {
@@ -334,7 +341,6 @@
     &__container {
       height: 10rem;
       padding: 0 1.5rem;
-      max-width: 140rem;
     }
     &__logo {
       height: 4.6rem;
@@ -346,7 +352,7 @@
     }
 
     &__untill {
-      right: 3rem;
+      padding-right: 0;
       font-size: 1.6rem;
 
       .untill__login {
