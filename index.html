@@ -84,8 +84,8 @@
   </head>
 
   <body>
-    <div class="inner">
-      <header class="header">
+    <header class="header">
+      <div class="inner">
         <div class="header__container">
           <h1 class="header__logo">
             <a href="https://www.cloudiumbox.com/kr/" target="_blank">
@@ -331,22 +331,12 @@
             </ul>
           </div>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <!-- 메인비주얼 -->
-      <main class="mainvisual">
-        <div class="mainvisual__video__container">
-          <div class="mainvisual__video">
-            <video
-              muted
-              loop
-              autoplay
-              playsinline
-              src="./images/main_visual.mp4"
-            ></video>
-          </div>
-        </div>
-
+    <!-- 메인비주얼 -->
+    <main class="mainvisual">
+      <div class="inner">
         <div class="mainvisual__text">
           <p class="text__main">
             완벽하게 보호하고 <br />
@@ -364,8 +354,21 @@
             <span class="text__startfree__arrow"></span>
           </a>
         </div>
-      </main>
-    </div>
+
+        <div class="mainvisual__video__container">
+          <div class="mainvisual__video">
+            <video
+              muted
+              loop
+              autoplay
+              playsinline
+              src="./images/main_visual.mp4"
+            ></video>
+          </div>
+        </div>
+      </div>
+    </main>
+    
 
     <section class="section section-about">
       <div class="inner">
