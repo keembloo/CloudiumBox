@@ -1,6 +1,11 @@
 .partner {
+  @include hide;
   padding: 2rem 0;
   border-bottom: 0.1rem solid #ddd;
+
+  &.is-active {
+    @include show;
+  }
 
   &__carousel {
     position: relative;

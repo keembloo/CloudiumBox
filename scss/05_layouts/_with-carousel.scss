@@ -1,7 +1,12 @@
 .with-cloudium {
+  @include hide;
   padding: 4.5rem 0 6.5rem;
   color: #fff;
   background: #0a54b8;
+
+  &.is-active {
+    @include show;
+  }
 
   & .with-txt {
     display: flex;
@@ -45,7 +50,14 @@
     font-size: 1.3rem;
   }
 }
+.safe-article {
+  @include hide;
+  padding-bottom: 5rem;
 
+  &.is-active {
+    @include show;
+  }
+}
 .safe-wrap {
   padding: 40px 0;
   position: relative;
@@ -75,6 +87,7 @@
   display: flex;
   justify-content: center;
   padding-top: 3rem;
+  min-width: 4.4rem;
 
   & a {
     width: 40.5%;
@@ -163,10 +176,13 @@
     & p.txt02 {
       font-size: 1.3rem;
       margin-top: 1.5rem;
-
       & a {
         opacity: 0.8;
         font-weight: 300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
       }
     }
   }
@@ -295,27 +311,40 @@
     width: 50vw;
   }
   .with__list {
-    padding: 0 8% 0 6rem;
+    padding: 6% 8% 0 12rem;
     width: 100%;
   }
   .with__list .Imglist p.txt01 {
     text-align: start;
     letter-spacing: -0.25px;
-    line-height: 1.81;
+    line-height: 1.81rem;
     margin-top: 4rem;
   }
-  div.with__list .Imglist p.txt02 {
-    margin-top: 2.5rem;
+  .with__list .with-wrap p.txt01 {
+    line-height: 3rem;
   }
   .bg {
     width: 80%;
   }
 }
+
 @media screen and (min-width: $blg-breakpoint) {
   .bg {
     width: 100%;
   }
   .with-txt .with__list .with-wrap {
     text-align: start;
+  }
+  .with-cloudium .with-txt .up h3 {
+    font-size: 6rem;
+  }
+  .with-txt .up a {
+    font-size: 1.6rem;
+  }
+  .with__list .with-wrap strong {
+    text-align: start;
+  }
+  .safe-article {
+    padding-bottom: 10rem;
   }
 }

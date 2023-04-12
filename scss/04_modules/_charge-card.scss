@@ -94,23 +94,23 @@
     &:last-child {
       margin-right: 0;
     }
-  }
 
-  .card__price {
-    &.inquiry {
-      font-size: 3rem;
+    .card__price {
+      &.inquiry {
+        font-size: 3rem;
+      }
     }
-  }
 
-  .card__text {
-    @include pos-center-x;
-    bottom: 3rem;
-    white-space: nowrap;
+    .card__text {
+      @include pos-center-x;
+      bottom: 3rem;
+      white-space: nowrap;
+    }
   }
 }
 
 .charge__card {
-  @media screen and (min-width: $md-breakpoint) {
+  @media screen and (min-width: $lg-breakpoint) {
     margin-right: 2rem;
 
     &:last-child {
@@ -136,19 +136,12 @@
     }
 
     .card__desc {
+      margin-bottom: 5.5rem;
       font-size: 1.6rem;
     }
 
     .card__text {
       font-size: 1.4rem;
-    }
-  }
-}
-
-.charge__card {
-  @media screen and (min-width: $md-breakpoint) {
-    .card__desc {
-      margin-bottom: 5.5rem;
     }
   }
 }
