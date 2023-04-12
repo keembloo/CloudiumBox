@@ -1,0 +1,38 @@
+.btn-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 3rem;
+  z-index: 200;
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.4rem;
+  color: #fff;
+  pointer-events: none;
+  background-color: #162247;
+  border-radius: 50%;
+  opacity: 0;
+  transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
+  transform: translate3d(0, 5rem, 0);
+
+  &.show {
+    pointer-events: auto;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.btn-top {
+  @media screen and (min-width: $md-breakpoint) {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+  }
+}
+
+.btn-top {
+  @media screen and (min-width: $lg-breakpoint) {
+    width: 7rem;
+    height: 7rem;
+    font-size: 3rem;
+  }
+}

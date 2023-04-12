@@ -1,12 +1,9 @@
 .charge {
   padding: 5rem 0 8rem;
-  opacity: 0;
-  transition: all 1000ms ease;
-  transform: translate3d(0, -2rem, 0);
+  @include hide;
 
   &.is-active {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
+    @include show;
   }
 
   &__wrapper {
@@ -82,6 +79,8 @@
 
 .charge {
   @media screen and (min-width: $lg-breakpoint) {
+    padding: 10rem 0 16.4rem;
+
     &__wrapper {
       max-width: 93.5rem;
       padding: 5.5rem 0 4.5rem;
