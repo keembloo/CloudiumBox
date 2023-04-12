@@ -1,12 +1,9 @@
 .charge {
   padding: 5rem 0 8rem;
-  opacity: 0;
-  transition: all 1000ms ease;
-  transform: translate3d(0, -2rem, 0);
+  @include hide;
 
   &.is-active {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
+    @include show;
   }
 
   &__wrapper {
