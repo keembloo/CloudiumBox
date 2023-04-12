@@ -1,7 +1,12 @@
 .with-cloudium {
+  @include hide;
   padding: 4.5rem 0 6.5rem;
   color: #fff;
   background: #0a54b8;
+
+  &.is-active {
+    @include show;
+  }
 
   & .with-txt {
     display: flex;
