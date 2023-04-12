@@ -1,173 +1,175 @@
 /* globals */
 body {
-    min-width: 32rem;
+  min-width: 32rem;
 }
 
 /* modules - section common */
 .section {
-    .inner {
-        padding-top: 5rem;
-        padding-bottom: 6rem;
-    }
-    .title-wr {
-        margin-bottom: 3rem;
-        text-align: center;
-        word-break: keep-all;
-        color: $primaryBlue9;
-        
-        }
-    .sc-tit {
-        font-size: 3rem;
-        font-weight: 500;
-        font-family: $font-title;
-        line-height: 1.2em;
-        letter-spacing: -0.1em;
+  .inner {
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+  }
+  .title-wr {
+    margin-bottom: 3rem;
+    text-align: center;
+    word-break: keep-all;
+    color: $primaryBlue9;
+  }
+  .sc-tit {
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: $font-title;
+    line-height: 1.2em;
+    letter-spacing: -0.1em;
 
-        &--point-color1 {
-            color: $primaryBlue1;
-        }
+    &--point-color1 {
+      color: $primaryBlue1;
     }
-    .sc-tit-sub {
-        margin-top: 0.5rem;
-        font-size: 1.5em;
-        font-weight: 500;
-        line-height: 1.5em;
-        letter-spacing: -0.025em;
+  }
+  .sc-tit-sub {
+    margin-top: 0.5rem;
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: -0.025em;
+  }
+  .ac-tit {
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.45em;
+    letter-spacing: -0.023em;
+    color: $primaryBlue3;
+  }
+  .ac-tit-sub {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #046cf5;
+  }
+
+  .contents {
+    font-size: 1.3rem;
+    .img-box {
+      &__img {
+        width: 100%;
+      }
     }
-    .ac-tit {
-        font-size: 2.2rem;
+    .txt-box {
+      word-break: keep-all;
+      &__tit {
         font-weight: 500;
         line-height: 1.45em;
-        letter-spacing: -0.023em;
+        letter-spacing: -0.025em;
         color: $primaryBlue3;
+      }
+      &__desc {
+        font-weight: 400;
+        line-height: 1.625em;
+        letter-spacing: -0.015em;
+        color: $grayscaleGray;
+      }
     }
-    .ac-tit-sub {
-        margin-bottom: 1rem;
-        font-size: 1.6rem;
-        font-weight: 500;
-        color: #046CF5;
-    }
-    
-    .contents {
-        font-size: 1.3rem;
-        .img-box {
-            &__img {
-                width: 100%;
-            }
-        }
-        .txt-box {
-            word-break: keep-all;
-            &__tit {
-                font-weight: 500;
-                line-height: 1.45em;
-                letter-spacing: -0.025em;
-                color: $primaryBlue3;
-            }
-            &__desc {
-                font-weight: 400;
-                line-height: 1.625em;
-                letter-spacing: -0.015em;
-                color: $grayscaleGray;
-            }
-        }
-    }
-   
-    .btn-w {
-        @include flexbox (normal, center);
-        position: relative;
-        width: 20rem;
-        height: 5rem;
-        padding: 0 1.153em;
-        font-weight: 600;
-        line-height: 1em;
-        text-align: left;
-        border: 2px solid $primaryBlue8;
-        color: $primaryBlue8;
-        transition:all 0.3s;
-        &::after {
-            content: "";
-            display: block;
-            width: 0.7rem;
-            height: 1.2rem;
-            position: absolute;
-            top: 50%;
-            right: 1.153em;
-            transform: translateY(-50%);
-            background-image: url("../../images/icon_btn_arrows.png");
-            background-size: cover;
-            background-position: 0 0;
-        }
-        &:hover {
-            background-color: $primaryBlue8;
-            color: $white;
+  }
 
-            &::after {
-                background-position-y: -1.2rem;
-            }
-        }
+  .btn-w {
+    @include flexbox(normal, center);
+    position: relative;
+    width: 20rem;
+    height: 5rem;
+    padding: 0 1.153em;
+    font-weight: 600;
+    line-height: 1em;
+    text-align: left;
+    border: 2px solid $primaryBlue8;
+    color: $primaryBlue8;
+    transition: all 0.3s;
+    &::after {
+      content: '';
+      display: block;
+      width: 0.7rem;
+      height: 1.2rem;
+      position: absolute;
+      top: 50%;
+      right: 1.153em;
+      transform: translateY(-50%);
+      background-image: url('../../images/icon_btn_arrows.png');
+      background-size: cover;
+      background-position: 0 0;
     }
+    &:hover {
+      background-color: $primaryBlue8;
+      color: $white;
+
+      &::after {
+        background-position-y: -1.2rem;
+      }
+    }
+  }
 }
 
 /* Mobile ~ Tablet */
 @media screen and (min-width: 27rem) {
-    /* modules - section common */
-    .section {
-        .sc-tit {
-            font-size: 3.5rem;
-        }
-        .sc-tit-sub {
-            font-size: 1.7rem;
-        }
+  /* modules - section common */
+  .section {
+    .sc-tit {
+      font-size: 3.5rem;
     }
+    .sc-tit-sub {
+      font-size: 1.7rem;
+    }
+  }
 }
 
 /* Tablet */
 @media screen and (min-width: $md-breakpoint) {
-    /* modules - section common */
-    .section {
-        .title-wr {
-            margin-bottom: 4.5rem;
-        }
-        .sc-tit {
-            font-size: 4.5rem;
-        }
-        .ac-tit {
-            font-size: 2.8rem;
-        }
-        .contents {
-            font-size: 1.6rem;
-        }//컨텐츠 폰트 사이즈 재정의
-        .btn-w {
-            width: 26rem;
-            height: 6.5rem;
-            &::after {
-                width: 0.8rem;
-                height: 1.4rem;
-            }
-            &:hover::after {
-                background-position-y: -1.4rem;
-            }
-        }
+  /* modules - section common */
+  .section {
+    .title-wr {
+      margin-bottom: 4.5rem;
     }
+    .sc-tit {
+      font-size: 4.5rem;
+    }
+    .ac-tit {
+      font-size: 2.8rem;
+    }
+    .contents {
+      font-size: 1.6rem;
+    } //컨텐츠 폰트 사이즈 재정의
+    .btn-w {
+      width: 26rem;
+      height: 6.5rem;
+      &::after {
+        width: 0.8rem;
+        height: 1.4rem;
+      }
+      &:hover::after {
+        background-position-y: -1.4rem;
+      }
+    }
+  }
 }
 
 /* PC */
 @media screen and (min-width: $lg-breakpoint) {
-    /* modules - section common */
-    .section {
-        padding: 10rem 0 12.2rem;
-        .title-wr {
-            margin-bottom: 6rem;
-        }
-        .sc-tit {
-            font-size: 6rem;
-        }
-        .sc-tit-sub {
-            margin-top: 1rem;
-            font-size: 2.3rem;
-        }
-        .ac-tit {
-            font-size: 3.3rem;
-        }
+  /* modules - section common */
+  .section {
+    .inner {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
     }
+    .title-wr {
+      margin-bottom: 6rem;
+    }
+    .sc-tit {
+      font-size: 6rem;
+    }
+    .sc-tit-sub {
+      margin-top: 1rem;
+      font-size: 2.3rem;
+    }
+    .ac-tit {
+      font-size: 3.3rem;
+    }
+  }
 }

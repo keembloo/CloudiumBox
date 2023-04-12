@@ -525,7 +525,7 @@ body {
   margin-bottom: 1rem;
   font-size: 1.6rem;
   font-weight: 500;
-  color: #046CF5;
+  color: #046cf5;
 }
 .section .contents {
   font-size: 1.3rem;
@@ -623,8 +623,9 @@ body {
 /* PC */
 @media screen and (min-width: 64rem) {
   /* modules - section common */
-  .section {
-    padding: 10rem 0 12.2rem;
+  .section .inner {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
   .section .title-wr {
     margin-bottom: 6rem;
@@ -1438,7 +1439,7 @@ body {
 .mainvisual__text .text__startfree__arrow {
   position: absolute;
   display: inline-block;
-  background-image: url("../../images/wh_arrow.png");
+  background-image: url("./images/wh_arrow.png");
   background-size: 100%;
   background-repeat: no-repeat;
   width: 0.8rem;
